@@ -166,7 +166,7 @@ int main(){
 				std::cout << getnum(getrank(x) - 1) << std::endl;
 				break;
 			case 6:
-				std::cout << getnum(getrank(x) + 1) << std::endl;
+				std::cout << getnum(getrank(x + 1)) << std::endl;
 				break;
 			
 		}
