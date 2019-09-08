@@ -130,7 +130,7 @@ int getnum(int rank){
 	{
 		if(tzy[now].exist && tzy[now].exist + tzy[tzy[now].l].fact == rank)
 			break;
-		else if(tzy[now].fact > rank)
+		else if(tzy[tzy[now].l].fact >= rank)
 			now = tzy[now].l;
 		else
 		{
