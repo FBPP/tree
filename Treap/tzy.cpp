@@ -119,8 +119,10 @@ int getrank(int val){
 		if(val <= tzy[now].val)
 			now = tzy[now].l;
 		else
+		{
 			rank += tzy[now].exist + tzy[tzy[now].l].fact;
-		now = tzy[now].r;
+			now = tzy[now].r;
+		}
 	}
 	return rank;
 }
@@ -144,7 +146,7 @@ int getnum(int rank){
 int main(){
 	int t;
 	std::cin >> t;
-	while(t)
+	while(t--)
 	{
 		int opt,x;
 		std::cin >> opt >> x;
